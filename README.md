@@ -2,6 +2,8 @@
 
 48 key monoblock split keyboard
 
+![Picture of PCB](pics/pcb.png?raw=true)
+
 ## Characteristics
 
 - 3x6 core + 6 key thumb cluster per hand
