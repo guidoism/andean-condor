@@ -7,7 +7,7 @@
 ## Characteristics
 
 - 3x6 core + 6 key thumb cluster per hand
-- Pro-micro MCU footprint (note: it's right-side-up which appears goes against the current trend)
+- Pro-micro MCU footprint (note: it's right-side-up which apparently goes against the current trend)
 - Nice!View headers (untested)
 
 ## Inspiration 
