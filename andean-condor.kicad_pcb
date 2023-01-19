@@ -5565,6 +5565,9 @@
   (gr_arc (start 285.242863 54.353645) (mid 286.76053 54.553415) (end 287.692352 55.767856) (layer "Edge.Cuts") (width 0.15) (tstamp fd99de5e-8cfc-4e88-969a-6ccecef14f5e))
   (gr_line (start 49.821572 109.683836) (end 63.797801 57.523842) (layer "Edge.Cuts") (width 0.15) (tstamp fee7acc3-6c76-4d5e-b15a-3b00101139a3))
   (gr_line (start 66.247288 56.109629) (end 99.088767 64.909477) (layer "Edge.Cuts") (width 0.15) (tstamp ff9e17b5-4a2a-4d49-a853-f0442e86e287))
+  (gr_text "designed by Guido Bartolucci\nhttps://github.com/guidoism/andean-condor" (at 195.5 134.1) (layer "B.SilkS") (tstamp 53173214-49ca-45a4-ae60-c368e9a630c1)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
 
   (segment (start 200.7 85.8) (end 197.1 82.2) (width 0.25) (layer "F.Cu") (net 0) (tstamp 1f30eb71-be7b-4e1f-9242-91c0f70e4199))
   (segment (start 197.1 82.2) (end 196.2 82.2) (width 0.25) (layer "F.Cu") (net 0) (tstamp e14574f0-7e15-485e-9182-54644de14e1c))
