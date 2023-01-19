@@ -1,0 +1,121 @@
+points:
+  zones:
+    matrix:
+      anchor:
+        rotate: 5
+      columns:
+        farpinky.key:
+          column_net: col1
+        pinky.key:
+          column_net: col2
+        ring.key:
+          stagger: 12
+          column_net: col3
+        middle.key:
+          stagger: 5
+          column_net: col4
+        index.key:
+          stagger: -6
+          column_net: col5
+        inner.key:
+          stagger: -2
+          column_net: col6
+      rows:
+        bottom.row_net: row3
+        home.row_net: row2
+        top.row_net: row1
+    thumbfan:
+      anchor:
+        ref: matrix_middle_bottom
+        shift: [5.5, -25]
+      columns:
+        tucky.rows.top: $unset # EXAMPLE: <- Removing tucky top key
+        near.rows.top: $unset
+        tucky.key:
+          splay: -5
+          column_net: col1
+        near.key:
+          splay: -15
+          origin: [-9.5, -9.5]
+          column_net: col2
+        home.key:
+          splay: -15
+          origin: [-9.5, -9.5]
+          column_net: col3
+        far.key:
+          splay: -15
+          origin: [-9.5, -9.5]
+          column_net: col4
+      rows:
+        thumb.key.row_net: row4
+        top.key.row_net: row4
+        
+  rotate: -20
+  mirror:
+    ref: thumbfan_far_top
+    distance: 25
+outlines:
+  outline:
+    main:
+      what: rectangle
+      where: /.*matrix.*|mirror_thumbfan.*/ # EXAMPLE: <- Using regex here
+      size: 20
+      fillet: 2
+    middle:
+      what: polygon
+      points:
+        - ref: matrix_inner_top
+          shift: [$default_width/2,$default_height/2]
+        - ref: thumbfan_tucky_thumb
+          shift: [$default_width/2,$default_height/2]
+        - ref: thumbfan_tucky_thumb
+          shift: [$default_width/2,-$default_height/2]
+        - ref: thumbfan_near_thumb
+          shift: [0,-$default_height/2]
+        - ref: thumbfan_home_thumb
+          shift: [0,-$default_height/2]
+        - ref: thumbfan_far_thumb
+          shift: [$default_width/2,-$default_height/2]
+        - ref: thumbfan_far_top
+          shift: [$default_width/2,$default_height/2]
+        - ref: mirror_thumbfan_far_thumb
+          shift: [$default_width/2,-$default_height/2]
+        - ref: mirror_thumbfan_home_thumb
+          shift: [0,-$default_height/2]
+        - ref: mirror_thumbfan_near_thumb
+          shift: [0,-$default_height/2]
+        - ref: mirror_thumbfan_tucky_thumb
+          shift: [$default_width/2,-$default_height/2]
+        - ref: mirror_thumbfan_tucky_thumb
+          shift: [$default_width/2,$default_height/2]
+        - ref: mirror_matrix_inner_top
+          shift: [$default_width/2,$default_height/2]
+  plate:
+    - what: outline
+      name: outline
+pcbs.pcb.outlines:
+  - outline: plate
+pcbs.pcb.footprints:
+  mx:
+    what: mx
+    where: true
+    params:
+      from: "{{colrow}}" # QUESTION: Does this differ from =colrow?
+      to: "{{column_net}}"
+      keycaps: true
+  diode:
+    what: diode
+    where: left
+    params:
+      from: "{{colrow}}" # QUESTION: Does this differ from =colrow?
+      to: "{{row_net}}"
+      via_in_pad: true
+      through_hole: true
+  promicro:
+    what: promicro
+    params:
+      orientation: up
+    adjust.shift: [134.145, 0] # QUESTION: Can I use math to make this centered?
+    adjust.rotate: -90
+
+    
