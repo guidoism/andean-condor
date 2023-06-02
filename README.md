@@ -2,13 +2,12 @@
 
 48 key monoblock split keyboard
 
-![Picture of PCB](pics/pcb.png?raw=true)
+![Picture of PCB](pics/pcb-pico-w.png?raw=true)
 
 ## Characteristics
 
 - 3x6 core + 6 key thumb cluster per hand
-- Pro-micro MCU footprint (note: it's right-side-up which apparently goes against the current trend)
-- Nice!View headers (untested)
+- Raspberry Pi Pico W MCU
 
 ## Inspiration 
 
