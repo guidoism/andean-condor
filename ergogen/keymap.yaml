@@ -1,6 +1,6 @@
 layers:
   Base:
-    - [TAB, Q,    W,    E,    R,    T,        Y,    U,    I,    O,    P,    BS]
-    - [CTL, A,    S,    D,    F,    G,        H,    J,    K,    L,    ":",  RET]
-    - [SFT, Z,    X,    C,    V,    B,        N,    M,    ",",  ".",  "/",  ";"]
-    - [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, F1, F2]
+    - [tab,    q,    w,    e,    r,    t,        y,    u,    i,    o,     p,      del]
+    - [ctrl,   a,    s,    d,    f,    g,        h,    j,    k,    l,     ":",    ret]
+    - [shift,  z,    x,    c,    v,    b,        n,    m,    ",",  ".",   "/",    ";"]
+    - [opt,    cmd,  num,  fn,  mov,   "",       "",   code, space, ctrl,  shift,  ""]
