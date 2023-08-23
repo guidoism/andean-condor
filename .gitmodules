@@ -1,0 +1,6 @@
+[submodule "kmk_firmware"]
+	path = kmk_firmware
+	url = https://github.com/KMKfw/kmk_firmware
+[submodule "Adafruit_CircuitPython_BLE"]
+	path = Adafruit_CircuitPython_BLE
+	url = https://github.com/adafruit/Adafruit_CircuitPython_BLE
