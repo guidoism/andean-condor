@@ -78,6 +78,9 @@ points:
   mirror:
     ref: thumbfan_far_top
     distance: 25
+    # row_net: P6
+
+    
 outlines:
   outline:
     main:
