@@ -1,8 +1,18 @@
+# cd 2023-01-18.andean-condor
+# cd ergogen
+# npm install
+# node src/cli.js ../andean-condor/andean-condor.yaml -o ../andean-condor/ergogen-output
+units:
+  mcu_height: 34
+  mcu_width: 18
+  mcu_padding: 1.5 # distance keys to mcu
 points:
   zones:
     matrix:
       anchor:
         rotate: 5
+      key:
+        tags: [switchcore]
       columns:
         farpinky.key:
           column_net: col1
@@ -25,11 +35,13 @@ points:
         home.row_net: row2
         top.row_net: row1
     thumbfan:
+      key:
+        tags: [thumbfan]
       anchor:
         ref: matrix_middle_bottom
         shift: [5.5, -25]
       columns:
-        tucky.rows.top: $unset # EXAMPLE: <- Removing tucky top key
+        tucky.rows.top: $unset
         near.rows.top: $unset
         tucky.key:
           splay: -5
@@ -49,7 +61,19 @@ points:
       rows:
         thumb.key.row_net: row4
         top.key.row_net: row4
-        
+    mcu:
+      anchor:
+        ref: matrix_inner_top
+      columns:
+        mcu:
+          key:
+            tags: [mcu]
+            width: mcu_height  # footprint width/height unintuitive
+            height: mcu_width
+            rotate: -75
+            shift: [33, -mcu_width/2]            
+            asym: left
+            #skip: true
   rotate: -20
   mirror:
     ref: thumbfan_far_top
@@ -58,10 +82,15 @@ outlines:
   outline:
     main:
       what: rectangle
-      where: /.*matrix.*|mirror_thumbfan.*/ # EXAMPLE: <- Using regex here
+      where: /.*matrix.*|thumbfan|mirror_thumbfan.*/
       size: 20
       fillet: 2
-    middle:
+    center:
+      what: rectangle
+      where: /.*mcu.*/
+      size: 50
+      fillet: 2
+    inbetweenstuff:
       what: polygon
       points:
         - ref: matrix_inner_top
@@ -93,29 +122,91 @@ outlines:
   plate:
     - what: outline
       name: outline
-pcbs.pcb.outlines:
-  - outline: plate
-pcbs.pcb.footprints:
-  mx:
-    what: mx
-    where: true
-    params:
-      from: "{{colrow}}" # QUESTION: Does this differ from =colrow?
-      to: "{{column_net}}"
-      keycaps: true
-  diode:
-    what: diode
-    where: left
-    params:
-      from: "{{colrow}}" # QUESTION: Does this differ from =colrow?
-      to: "{{row_net}}"
-      via_in_pad: true
-      through_hole: true
-  promicro:
-    what: promicro
-    params:
-      orientation: up
-    adjust.shift: [134.145, 0] # QUESTION: Can I use math to make this centered?
-    adjust.rotate: -90
-
-    
+pcbs:
+  andean-condor:
+    footprints:
+      mx:
+        what: mx
+        where: [switchcore, thumbfan]
+        params:
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+          keycaps: true
+      diodecore:
+        what: diode
+        where: [switchcore]
+        adjust:
+          rotate: 90
+          shift: [9.5, 0]        
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      diodethumbs:
+        what: diode
+        where: [thumbfan]
+        adjust:
+          rotate: 0
+          shift: [0, 9.5]        
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      nicenano:
+        what: nicenano
+        where: mcu
+        params:
+          orientation: down
+          RAW: RAW_P1
+          GND1: GND_P0
+          RST: RST_GND
+          VCC: VCC_GND 
+          P21: ENCA
+          P20: ENCB
+          P19: row0
+          P18: row1
+          P15: row2
+          P14: row3
+          P16: row4
+          P10: row5
+          P1: P1_RAW
+          P0: P0_GND
+          GND2: GND_RST
+          GND3: GND_VCC
+          P2: SDA
+          P3: SCL
+          P4: CS
+          P5: col0
+          P6: col1
+          P7: col2
+          P8: col3
+          P9: col4
+      niceview:
+        what: niceview
+        where: mcu
+        adjust:
+          shift: [20.5, 0]
+          rotate: 180
+        params:
+          outline: true
+          side: 'F'
+          SDA: NN_SDA_CS
+          SCL: NN_SCL_GND
+          VCC: NN_VCC
+          GND: NN_GND_SCL
+          CS: NN_CS_SDA
+      slider:
+        what: slider
+        where: mcu
+        adjust:
+          shift: [-17.1, 0]
+          rotate: 90
+        params:
+          side: F
+          from: switch_from
+          to: RAW
+      battery:
+        what: battery
+        where: mcu
+        adjust:
+          shift: [-17, 0]
+        params:
+          RAW: switch_from
