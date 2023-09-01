@@ -152,7 +152,10 @@ pcbs:
           to: "{{row_net}}"
       nicenano:
         what: nicenano
-        where: mcu
+        where:
+          ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
+          rotate: -90
+          shift: [0, -10]
         params:
           orientation: down
           RAW: RAW_P1
@@ -181,7 +184,10 @@ pcbs:
           P9: col4
       niceview:
         what: niceview
-        where: mcu
+        where: 
+          ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
+          rotate: -90
+          shift: [0, -10]
         adjust:
           shift: [20.5, 0]
           rotate: 180
