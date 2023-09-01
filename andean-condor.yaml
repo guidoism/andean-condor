@@ -12,21 +12,21 @@ points:
         tags: [switchcore]
       columns:
         farpinky.key:
-          column_net: col1
+          col_net: col1
         pinky.key:
-          column_net: col2
+          col_net: col2
         ring.key:
           stagger: 12
-          column_net: col3
+          col_net: col3
         middle.key:
           stagger: 5
-          column_net: col4
+          col_net: col4
         index.key:
           stagger: -6
-          column_net: col5
+          col_net: col5
         inner.key:
           stagger: -2
-          column_net: col6
+          col_net: col6
       rows:
         bottom.row_net: row3
         home.row_net: row2
@@ -42,19 +42,19 @@ points:
         near.rows.top: $unset
         tucky.key:
           splay: -5
-          column_net: col1
+          col_net: col1
         near.key:
           splay: -15
           origin: [-9.5, -9.5]
-          column_net: col2
+          col_net: col2
         home.key:
           splay: -15
           origin: [-9.5, -9.5]
-          column_net: col3
+          col_net: col3
         far.key:
           splay: -15
           origin: [-9.5, -9.5]
-          column_net: col4
+          col_net: col4
       rows:
         thumb.key.row_net: row4
         top.key.row_net: row4
@@ -130,7 +130,7 @@ pcbs:
         where: [switchcore, thumbfan]
         params:
           from: "{{colrow}}"
-          to: "{{column_net}}"
+          to: "{{col_net}}"
           keycaps: true
       diodecore:
         what: diode
