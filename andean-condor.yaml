@@ -2,15 +2,12 @@
 # cd ergogen
 # npm install
 # node src/cli.js ../andean-condor/andean-condor.yaml -o ../andean-condor/ergogen-output
-units:
-  mcu_height: 34
-  mcu_width: 18
-  mcu_padding: 1.5 # distance keys to mcu
 points:
   zones:
     matrix:
       anchor:
         rotate: 5
+        shift: [100, -100]
       key:
         tags: [switchcore]
       columns:
@@ -68,10 +65,10 @@ points:
         mcu:
           key:
             tags: [mcu]
-            width: mcu_height  # footprint width/height unintuitive
-            height: mcu_width
+            width: 18
+            height: 34
             rotate: -75
-            shift: [33, -mcu_width/2]            
+            shift: [33, -34/2]            
             asym: left
             #skip: true
   rotate: -20
