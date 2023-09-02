@@ -158,7 +158,7 @@ pcbs:
         where: [switchcore]
         adjust:
           rotate: 90
-          shift: [9.5, 0]        
+          shift: [8.7, 0]        
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
@@ -167,7 +167,7 @@ pcbs:
         where: [thumbfan]
         adjust:
           rotate: 0
-          shift: [0, 9.5]        
+          shift: [0, 8.7]        
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
@@ -181,23 +181,23 @@ pcbs:
           orientation: down # NOTE: up doesn't seem to work
           RAW: RAW
           GND1: GND
-          RST: RST_GND
-          VCC: VCC_GND 
-          P21: row1r # ENCA
-          P20: row2r # ENCB
+          RST: RST
+          VCC: VCC
+          P21: row1r
+          P20: row2r
           P19: row1
           P18: row2
           P15: col1
           P14: col6
           P16: row3r
           P10: row4r 
-          P1: extra1     #P1_RAW
-          P0: CS   # P0_GND
+          P1: CS
+          P0: extra1
           GND2: GND
           GND3: GND
-          P2: SCK   # SDA
-          P3: MOSI  # SCL
-          P4: col4  # CS
+          P2: SDA
+          P3: SCL
+          P4: col4
           P5: col5
           P6: col3
           P7: col2
@@ -227,11 +227,11 @@ pcbs:
         params:
           outline: true
           side: 'F'
-          SDA: NN_SDA_CS
-          SCL: NN_SCL_GND
-          VCC: NN_VCC
-          GND: NN_GND_SCL
-          CS: NN_CS_SDA
+          SDA: SDA
+          SCL: SCL
+          VCC: VCC
+          GND: GND
+          CS: CS
       slider:
         what: slider
         where: mcu
@@ -250,4 +250,16 @@ pcbs:
           rotate: 90
         params:
           RAW: switch_from
+      rotary:
+        what: rotary
+        where:
+          ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
+          shift: [0, -20p]
+          rotate: -90
+        params:
+          from: GND
+          to: GND
+          A: SDA
+          B: GND
+          C: CS
 
