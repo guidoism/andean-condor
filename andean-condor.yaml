@@ -244,6 +244,6 @@ pcbs:
         what: battery
         where: mcu
         adjust:
-          shift: [-17, 0]
+          shift: [11, 2.7]
         params:
           RAW: switch_from
