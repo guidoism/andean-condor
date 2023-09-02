@@ -76,19 +76,6 @@ points:
         top:
           row_net: row4
           mirror.row_net: row4r
-    mcu:
-      anchor:
-        ref: matrix_inner_top
-      columns:
-        mcu:
-          key:
-            tags: [mcu]
-            width: 18
-            height: 34
-            rotate: -75
-            shift: [33, -34/2]            
-            asym: left
-            #skip: true
   rotate: -20
   mirror:
     ref: thumbfan_far_top
@@ -102,11 +89,6 @@ outlines:
       what: rectangle
       where: /.*matrix.*|thumbfan|mirror_thumbfan.*/
       size: 20
-      fillet: 2
-    center:
-      what: rectangle
-      where: /.*mcu.*/
-      size: 50
       fillet: 2
     inbetweenstuff:
       what: polygon
