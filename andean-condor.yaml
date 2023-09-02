@@ -2,6 +2,8 @@
 # cd ergogen
 # npm install
 # node src/cli.js ../andean-condor/andean-condor.yaml -o ../andean-condor/ergogen-output
+units:
+  p: 2.54
 points:
   zones:
     matrix:
@@ -177,7 +179,7 @@ pcbs:
           shift: [0, -12]
         params:
           orientation: down # NOTE: up doesn't seem to work
-          RAW: RAW_P1
+          RAW: RAW
           GND1: GND
           RST: RST_GND
           VCC: VCC_GND 
@@ -189,7 +191,7 @@ pcbs:
           P14: col6
           P16: row3r
           P10: row4r 
-          P1: P1_RAW
+          P1: extra1     #P1_RAW
           P0: CS   # P0_GND
           GND2: GND
           GND3: GND
@@ -242,8 +244,10 @@ pcbs:
           to: RAW
       battery:
         what: battery
-        where: mcu
-        adjust:
-          shift: [11, 2.7]
+        where:
+          ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
+          shift: [0, -14p]
+          rotate: 90
         params:
           RAW: switch_from
+
