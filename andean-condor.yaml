@@ -234,10 +234,10 @@ pcbs:
           CS: CS
       slider:
         what: slider
-        where: mcu
-        adjust:
-          shift: [-29, 17]
-          rotate: 90
+        where: 
+          ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
+          rotate: 0
+          shift: [-14, 4]
         params:
           side: F
           from: switch_from
