@@ -178,7 +178,7 @@ pcbs:
         params:
           orientation: down # NOTE: up doesn't seem to work
           RAW: RAW_P1
-          GND1: GND_P0
+          GND1: GND
           RST: RST_GND
           VCC: VCC_GND 
           P21: row1r # ENCA
@@ -191,8 +191,8 @@ pcbs:
           P10: row4r 
           P1: P1_RAW
           P0: CS   # P0_GND
-          GND2: GND_RST
-          GND3: GND_VCC
+          GND2: GND
+          GND3: GND
           P2: SCK   # SDA
           P3: MOSI  # SCL
           P4: col4  # CS
