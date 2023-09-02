@@ -236,7 +236,7 @@ pcbs:
         what: rotary
         where:
           ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
-          shift: [0, -20p]
+          shift: [0, -21p]
           rotate: -90
         params:
           from: GND
@@ -244,4 +244,13 @@ pcbs:
           A: SDA
           B: GND
           C: CS
-
+      # Four Pin Reset Button
+      reset:
+        what: button
+        params:
+          from: GND
+          to: RST
+        where:
+          ref.aggregate.parts: [matrix_index_top, mirror_matrix_index_top]
+          shift: [0, -18p]
+          rotate: -90
