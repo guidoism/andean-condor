@@ -140,6 +140,9 @@ outlines:
       name: outline
 pcbs:
   andean-condor:
+    outlines:
+      main:
+        outline: plate
     footprints:
       mx:
         what: mx
@@ -171,7 +174,7 @@ pcbs:
         where:
           ref.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
           rotate: -90
-          shift: [0, -10]
+          shift: [0, -12]
         params:
           orientation: down # NOTE: up doesn't seem to work
           RAW: RAW_P1
