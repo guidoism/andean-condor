@@ -234,7 +234,7 @@ pcbs:
         what: slider
         where: mcu
         adjust:
-          shift: [-17.1, 0]
+          shift: [-29, 17]
           rotate: 90
         params:
           side: F
