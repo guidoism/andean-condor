@@ -254,3 +254,18 @@ pcbs:
           ref.aggregate.parts: [matrix_index_top, mirror_matrix_index_top]
           shift: [0, -18p]
           rotate: -90
+      left_header:
+        what: header
+        params:
+          pins: [GND, VCC, A, B, C, D, E, F, H, I, J, K, L, M]
+        where:
+          ref.aggregate.parts: [matrix_index_top, mirror_matrix_index_top]
+          shift: [-7p, -6p]
+      right_header:
+        what: header
+        params:
+          pins: [GND, VCC, A, B, C, D, E, F, H, I, J, K, L, M]
+        where:
+          ref.aggregate.parts: [matrix_index_top, mirror_matrix_index_top]
+          shift: [7p, -6p]
+          
