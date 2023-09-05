@@ -135,12 +135,39 @@ pcbs:
           from: "{{colrow}}"
           to: "{{col_net}}"
           keycaps: true
-      diodecore:
+      diodecoreleftupper:
         what: diode
-        where: [switchcore]
+        where: /^matrix_.*_[top|home]/
         adjust:
           rotate: 90
-          shift: [8.7, 0]        
+          shift: [8.7, 0]
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      diodecoreleftlower:
+        what: diode
+        where: /^matrix_.*_bottom/
+        adjust:
+          rotate: -90
+          shift: [8.7, 7]
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      diodecorerightupper:
+        what: diode
+        where: /^mirror_matrix_.*_[top|home]/
+        adjust:
+          rotate: -90
+          shift: [8.7, 0]
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      diodecorerightlower:
+        what: diode
+        where: /^mirror_matrix_.*_bottom/
+        adjust:
+          rotate: 90
+          shift: [8.7, 7]
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
@@ -149,7 +176,7 @@ pcbs:
         where: [thumbfan]
         adjust:
           rotate: 0
-          shift: [0, 8.7]        
+          shift: [0, 8.7]
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
@@ -185,6 +212,7 @@ pcbs:
           P7: col2
           P8: row3
           P9: row4
+# This is what the pinout I am expected looking down at the Nice!Nano
 #       1   .
 # CS    0   .
 #       .   .
@@ -268,4 +296,34 @@ pcbs:
         where:
           ref.aggregate.parts: [matrix_index_top, mirror_matrix_index_top]
           shift: [7p, -6p]
-          
+#      columnbus1:
+#        what: via
+#        params.net: col1
+#        where: /^matrix_.*_home/
+#        adjust.shift: [-2.5, -6]
+#      columnbus2:
+#        what: via
+#        params.net: col2
+#        where: /^matrix_.*_home/
+#        adjust.shift: [-2, -7]
+#      columnbus3:
+#        what: via
+#        params.net: col3
+#        where: /^matrix_.*_home/
+#        adjust.shift: [-1.5, -8]
+#      columnbus4:
+#        what: via
+#        params.net: col4
+#        where: /^matrix_.*_home/
+#        adjust.shift: [-1, -9]
+#      columnbus5:
+#        what: via
+#        params.net: col5
+#        where: /^matrix_.*_home/
+#        adjust.shift: [-0.5, -10]
+#      columnbus6:
+#        what: via
+#        params.net: col6
+#        where: /^matrix_.*_home/
+#        adjust.shift: [0, -11]
+        
