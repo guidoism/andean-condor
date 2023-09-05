@@ -171,12 +171,21 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
-      diodethumbs:
+      diodethumbsleft:
         what: diode
-        where: [thumbfan]
+        where: /^thumbfan_.*/
+        adjust:
+          rotate: 180
+          shift: [5, 8.7]
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      diodethumbsright:
+        what: diode
+        where: /^mirror_thumbfan_.*/
         adjust:
           rotate: 0
-          shift: [0, 8.7]
+          shift: [5, 8.7]
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"

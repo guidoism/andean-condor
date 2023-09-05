@@ -1,0 +1,3436 @@
+matrix_farpinky_bottom:
+    x: 59.7672477
+    'y': -128.1712764
+    r: -15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: farpinky_bottom
+        name: matrix_farpinky_bottom
+        tags:
+            - switchcore
+        col_net: col1
+        row_net: row3
+        mirror:
+            row_net: row3r
+        zone: &ref_1
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky: &ref_0
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky: &ref_2
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring: &ref_3
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle: &ref_4
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index: &ref_5
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner: &ref_6
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col: *ref_0
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+        mirrored: false
+matrix_farpinky_home:
+    x: 64.6848096
+    'y': -109.8186857
+    r: -15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: farpinky_home
+        name: matrix_farpinky_home
+        tags:
+            - switchcore
+        col_net: col1
+        row_net: row2
+        mirror:
+            row_net: row2r
+        zone: *ref_1
+        col: *ref_0
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 0
+        mirrored: false
+matrix_farpinky_top:
+    x: 69.6023715
+    'y': -91.466095
+    r: -15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: farpinky_top
+        name: matrix_farpinky_top
+        tags:
+            - switchcore
+        col_net: col1
+        row_net: row1
+        mirror:
+            row_net: row1r
+        zone: *ref_1
+        col: *ref_0
+        row: top
+        bind:
+            - 0
+            - 10
+            - 10
+            - 0
+        mirrored: false
+matrix_pinky_bottom:
+    x: 78.1198385
+    'y': -133.0888383
+    r: -15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: pinky_bottom
+        name: matrix_pinky_bottom
+        tags:
+            - switchcore
+        col_net: col2
+        row_net: row3
+        mirror:
+            row_net: row3r
+        zone: *ref_1
+        col: *ref_2
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 10
+        mirrored: false
+matrix_pinky_home:
+    x: 83.0374004
+    'y': -114.7362476
+    r: -15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: pinky_home
+        name: matrix_pinky_home
+        tags:
+            - switchcore
+        col_net: col2
+        row_net: row2
+        mirror:
+            row_net: row2r
+        zone: *ref_1
+        col: *ref_2
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+        mirrored: false
+matrix_pinky_top:
+    x: 87.9549622
+    'y': -96.3836568
+    r: -15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: pinky_top
+        name: matrix_pinky_top
+        tags:
+            - switchcore
+        col_net: col2
+        row_net: row1
+        mirror:
+            row_net: row1r
+        zone: *ref_1
+        col: *ref_2
+        row: top
+        bind:
+            - 0
+            - 10
+            - 10
+            - 0
+        mirrored: false
+matrix_ring_bottom:
+    x: 99.5782577
+    'y': -126.4152902
+    r: -15
+    meta:
+        stagger: 12
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: ring_bottom
+        name: matrix_ring_bottom
+        tags:
+            - switchcore
+        col_net: col3
+        row_net: row3
+        mirror:
+            row_net: row3r
+        zone: *ref_1
+        col: *ref_3
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 10
+        mirrored: false
+matrix_ring_home:
+    x: 104.4958196
+    'y': -108.0626995
+    r: -15
+    meta:
+        stagger: 12
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: ring_home
+        name: matrix_ring_home
+        tags:
+            - switchcore
+        col_net: col3
+        row_net: row2
+        mirror:
+            row_net: row2r
+        zone: *ref_1
+        col: *ref_3
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+        mirrored: false
+matrix_ring_top:
+    x: 109.4133814
+    'y': -89.7101087
+    r: -15
+    meta:
+        stagger: 12
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: ring_top
+        name: matrix_ring_top
+        tags:
+            - switchcore
+        col_net: col3
+        row_net: row1
+        mirror:
+            row_net: row1r
+        zone: *ref_1
+        col: *ref_3
+        row: top
+        bind:
+            - 0
+            - 10
+            - 10
+            - 0
+        mirrored: false
+matrix_middle_bottom:
+    x: 119.2249436
+    'y': -126.503223
+    r: -15
+    meta:
+        stagger: 5
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: middle_bottom
+        name: matrix_middle_bottom
+        tags:
+            - switchcore
+        col_net: col4
+        row_net: row3
+        mirror:
+            row_net: row3r
+        zone: *ref_1
+        col: *ref_4
+        row: bottom
+        bind:
+            - 10
+            - 10
+            - 0
+            - 10
+        mirrored: false
+matrix_middle_home:
+    x: 124.1425055
+    'y': -108.1506322
+    r: -15
+    meta:
+        stagger: 5
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: middle_home
+        name: matrix_middle_home
+        tags:
+            - switchcore
+        col_net: col4
+        row_net: row2
+        mirror:
+            row_net: row2r
+        zone: *ref_1
+        col: *ref_4
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+        mirrored: false
+matrix_middle_top:
+    x: 129.0600674
+    'y': -89.7980415
+    r: -15
+    meta:
+        stagger: 5
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: middle_top
+        name: matrix_middle_top
+        tags:
+            - switchcore
+        col_net: col4
+        row_net: row1
+        mirror:
+            row_net: row1r
+        zone: *ref_1
+        col: *ref_4
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 0
+        mirrored: false
+matrix_index_bottom:
+    x: 136.02462
+    'y': -137.2163398
+    r: -15
+    meta:
+        stagger: -6
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: index_bottom
+        name: matrix_index_bottom
+        tags:
+            - switchcore
+        col_net: col5
+        row_net: row3
+        mirror:
+            row_net: row3r
+        zone: *ref_1
+        col: *ref_5
+        row: bottom
+        bind:
+            - 10
+            - 10
+            - 0
+            - 0
+        mirrored: false
+matrix_index_home:
+    x: 140.9421819
+    'y': -118.8637491
+    r: -15
+    meta:
+        stagger: -6
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: index_home
+        name: matrix_index_home
+        tags:
+            - switchcore
+        col_net: col5
+        row_net: row2
+        mirror:
+            row_net: row2r
+        zone: *ref_1
+        col: *ref_5
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+        mirrored: false
+matrix_index_top:
+    x: 145.8597438
+    'y': -100.5111583
+    r: -15
+    meta:
+        stagger: -6
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: index_top
+        name: matrix_index_top
+        tags:
+            - switchcore
+        col_net: col5
+        row_net: row1
+        mirror:
+            row_net: row1r
+        zone: *ref_1
+        col: *ref_5
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+        mirrored: false
+matrix_inner_bottom:
+    x: 153.8595726
+    'y': -144.0657533
+    r: -15
+    meta:
+        stagger: -2
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: inner_bottom
+        name: matrix_inner_bottom
+        tags:
+            - switchcore
+        col_net: col6
+        row_net: row3
+        mirror:
+            row_net: row3r
+        zone: *ref_1
+        col: *ref_6
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+        mirrored: false
+matrix_inner_home:
+    x: 158.7771345
+    'y': -125.7131626
+    r: -15
+    meta:
+        stagger: -2
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: inner_home
+        name: matrix_inner_home
+        tags:
+            - switchcore
+        col_net: col6
+        row_net: row2
+        mirror:
+            row_net: row2r
+        zone: *ref_1
+        col: *ref_6
+        row: home
+        bind:
+            - 10
+            - 0
+            - 10
+            - 10
+        mirrored: false
+matrix_inner_top:
+    x: 163.6946964
+    'y': -107.3605718
+    r: -15
+    meta:
+        stagger: -2
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: inner_top
+        name: matrix_inner_top
+        tags:
+            - switchcore
+        col_net: col6
+        row_net: row1
+        mirror:
+            row_net: row1r
+        zone: *ref_1
+        col: *ref_6
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+        mirrored: false
+thumbfan_tucky_thumb:
+    x: 118.0670595
+    'y': -152.0748734
+    r: -20
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -5
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: tucky_thumb
+        name: thumbfan_tucky_thumb
+        tags:
+            - thumbfan
+        col_net: col1
+        row_net: row4
+        mirror:
+            row_net: row4r
+        zone: &ref_8
+            key:
+                tags:
+                    - thumbfan
+            columns:
+                tucky: &ref_7
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -5
+                        col_net: col1
+                    name: tucky
+                near: &ref_9
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        col_net: col2
+                    name: near
+                home: &ref_10
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col3
+                        top:
+                            col_net: col6
+                    name: home
+                far: &ref_11
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col4
+                        top:
+                            col_net: col5
+                    name: far
+            rows:
+                thumb:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+                top:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+            name: thumbfan
+        col: *ref_7
+        row: thumb
+        bind:
+            - 0
+            - 0
+            - 0
+            - 0
+        mirrored: false
+thumbfan_near_thumb:
+    x: 136.9758687
+    'y': -161.9181764
+    r: -35
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: near_thumb
+        name: thumbfan_near_thumb
+        tags:
+            - thumbfan
+        col_net: col2
+        row_net: row4
+        mirror:
+            row_net: row4r
+        zone: *ref_8
+        col: *ref_9
+        row: thumb
+        bind:
+            - 0
+            - 10
+            - 0
+            - 0
+        mirrored: false
+thumbfan_home_thumb:
+    x: 152.6927415
+    'y': -176.3200369
+    r: -50
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: home_thumb
+        name: thumbfan_home_thumb
+        tags:
+            - thumbfan
+        row_net: row4
+        mirror:
+            row_net: row4r
+        col_net: col3
+        zone: *ref_8
+        col: *ref_10
+        row: thumb
+        bind:
+            - 10
+            - 10
+            - 0
+            - 0
+        mirrored: false
+thumbfan_home_top:
+    x: 167.2475859
+    'y': -164.1070722
+    r: -50
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: home_top
+        name: thumbfan_home_top
+        tags:
+            - thumbfan
+        row_net: row4
+        mirror:
+            row_net: row4r
+        col_net: col6
+        zone: *ref_8
+        col: *ref_10
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 0
+        mirrored: false
+thumbfan_far_thumb:
+    x: 164.146599
+    'y': -194.2989918
+    r: -65
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: far_thumb
+        name: thumbfan_far_thumb
+        tags:
+            - thumbfan
+        row_net: row4
+        mirror:
+            row_net: row4r
+        col_net: col4
+        zone: *ref_8
+        col: *ref_11
+        row: thumb
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+        mirrored: false
+thumbfan_far_top:
+    x: 181.3664469
+    'y': -186.2692448
+    r: -65
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: far_top
+        name: thumbfan_far_top
+        tags:
+            - thumbfan
+        row_net: row4
+        mirror:
+            row_net: row4r
+        col_net: col5
+        zone: *ref_8
+        col: *ref_11
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+        mirrored: false
+mirror_matrix_farpinky_bottom:
+    x: 327.9656461
+    'y': -128.1712764
+    r: 15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_farpinky_bottom
+        name: mirror_matrix_farpinky_bottom
+        tags:
+            - switchcore
+        col_net: col1
+        row_net: row3r
+        mirror:
+            row_net: row3r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                col_net: col1
+            rows: {}
+            name: farpinky
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+        mirrored: true
+mirror_matrix_farpinky_home:
+    x: 323.0480842
+    'y': -109.8186857
+    r: 15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_farpinky_home
+        name: mirror_matrix_farpinky_home
+        tags:
+            - switchcore
+        col_net: col1
+        row_net: row2r
+        mirror:
+            row_net: row2r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                col_net: col1
+            rows: {}
+            name: farpinky
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 0
+        mirrored: true
+mirror_matrix_farpinky_top:
+    x: 318.1305223
+    'y': -91.466095
+    r: 15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_farpinky_top
+        name: mirror_matrix_farpinky_top
+        tags:
+            - switchcore
+        col_net: col1
+        row_net: row1r
+        mirror:
+            row_net: row1r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                col_net: col1
+            rows: {}
+            name: farpinky
+        row: top
+        bind:
+            - 0
+            - 10
+            - 10
+            - 0
+        mirrored: true
+mirror_matrix_pinky_bottom:
+    x: 309.6130553
+    'y': -133.0888383
+    r: 15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_pinky_bottom
+        name: mirror_matrix_pinky_bottom
+        tags:
+            - switchcore
+        col_net: col2
+        row_net: row3r
+        mirror:
+            row_net: row3r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                col_net: col2
+            rows: {}
+            name: pinky
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 10
+        mirrored: true
+mirror_matrix_pinky_home:
+    x: 304.69549340000003
+    'y': -114.7362476
+    r: 15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_pinky_home
+        name: mirror_matrix_pinky_home
+        tags:
+            - switchcore
+        col_net: col2
+        row_net: row2r
+        mirror:
+            row_net: row2r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                col_net: col2
+            rows: {}
+            name: pinky
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+        mirrored: true
+mirror_matrix_pinky_top:
+    x: 299.7779316
+    'y': -96.3836568
+    r: 15
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_pinky_top
+        name: mirror_matrix_pinky_top
+        tags:
+            - switchcore
+        col_net: col2
+        row_net: row1r
+        mirror:
+            row_net: row1r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                col_net: col2
+            rows: {}
+            name: pinky
+        row: top
+        bind:
+            - 0
+            - 10
+            - 10
+            - 0
+        mirrored: true
+mirror_matrix_ring_bottom:
+    x: 288.1546361
+    'y': -126.4152902
+    r: 15
+    meta:
+        stagger: 12
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_ring_bottom
+        name: mirror_matrix_ring_bottom
+        tags:
+            - switchcore
+        col_net: col3
+        row_net: row3r
+        mirror:
+            row_net: row3r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: 12
+                col_net: col3
+            rows: {}
+            name: ring
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 10
+        mirrored: true
+mirror_matrix_ring_home:
+    x: 283.2370742
+    'y': -108.0626995
+    r: 15
+    meta:
+        stagger: 12
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_ring_home
+        name: mirror_matrix_ring_home
+        tags:
+            - switchcore
+        col_net: col3
+        row_net: row2r
+        mirror:
+            row_net: row2r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: 12
+                col_net: col3
+            rows: {}
+            name: ring
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+        mirrored: true
+mirror_matrix_ring_top:
+    x: 278.3195124
+    'y': -89.7101087
+    r: 15
+    meta:
+        stagger: 12
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_ring_top
+        name: mirror_matrix_ring_top
+        tags:
+            - switchcore
+        col_net: col3
+        row_net: row1r
+        mirror:
+            row_net: row1r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: 12
+                col_net: col3
+            rows: {}
+            name: ring
+        row: top
+        bind:
+            - 0
+            - 10
+            - 10
+            - 0
+        mirrored: true
+mirror_matrix_middle_bottom:
+    x: 268.5079502
+    'y': -126.503223
+    r: 15
+    meta:
+        stagger: 5
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_middle_bottom
+        name: mirror_matrix_middle_bottom
+        tags:
+            - switchcore
+        col_net: col4
+        row_net: row3r
+        mirror:
+            row_net: row3r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: 5
+                col_net: col4
+            rows: {}
+            name: middle
+        row: bottom
+        bind:
+            - 10
+            - 10
+            - 0
+            - 10
+        mirrored: true
+mirror_matrix_middle_home:
+    x: 263.5903883
+    'y': -108.1506322
+    r: 15
+    meta:
+        stagger: 5
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_middle_home
+        name: mirror_matrix_middle_home
+        tags:
+            - switchcore
+        col_net: col4
+        row_net: row2r
+        mirror:
+            row_net: row2r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: 5
+                col_net: col4
+            rows: {}
+            name: middle
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+        mirrored: true
+mirror_matrix_middle_top:
+    x: 258.67282639999996
+    'y': -89.7980415
+    r: 15
+    meta:
+        stagger: 5
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_middle_top
+        name: mirror_matrix_middle_top
+        tags:
+            - switchcore
+        col_net: col4
+        row_net: row1r
+        mirror:
+            row_net: row1r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: 5
+                col_net: col4
+            rows: {}
+            name: middle
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 0
+        mirrored: true
+mirror_matrix_index_bottom:
+    x: 251.7082738
+    'y': -137.2163398
+    r: 15
+    meta:
+        stagger: -6
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_index_bottom
+        name: mirror_matrix_index_bottom
+        tags:
+            - switchcore
+        col_net: col5
+        row_net: row3r
+        mirror:
+            row_net: row3r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: -6
+                col_net: col5
+            rows: {}
+            name: index
+        row: bottom
+        bind:
+            - 10
+            - 10
+            - 0
+            - 0
+        mirrored: true
+mirror_matrix_index_home:
+    x: 246.7907119
+    'y': -118.8637491
+    r: 15
+    meta:
+        stagger: -6
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_index_home
+        name: mirror_matrix_index_home
+        tags:
+            - switchcore
+        col_net: col5
+        row_net: row2r
+        mirror:
+            row_net: row2r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: -6
+                col_net: col5
+            rows: {}
+            name: index
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+        mirrored: true
+mirror_matrix_index_top:
+    x: 241.87315
+    'y': -100.5111583
+    r: 15
+    meta:
+        stagger: -6
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_index_top
+        name: mirror_matrix_index_top
+        tags:
+            - switchcore
+        col_net: col5
+        row_net: row1r
+        mirror:
+            row_net: row1r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: -6
+                col_net: col5
+            rows: {}
+            name: index
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+        mirrored: true
+mirror_matrix_inner_bottom:
+    x: 233.8733212
+    'y': -144.0657533
+    r: 15
+    meta:
+        stagger: -2
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_inner_bottom
+        name: mirror_matrix_inner_bottom
+        tags:
+            - switchcore
+        col_net: col6
+        row_net: row3r
+        mirror:
+            row_net: row3r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: -2
+                col_net: col6
+            rows: {}
+            name: inner
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+        mirrored: true
+mirror_matrix_inner_home:
+    x: 228.9557593
+    'y': -125.7131626
+    r: 15
+    meta:
+        stagger: -2
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_inner_home
+        name: mirror_matrix_inner_home
+        tags:
+            - switchcore
+        col_net: col6
+        row_net: row2r
+        mirror:
+            row_net: row2r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: -2
+                col_net: col6
+            rows: {}
+            name: inner
+        row: home
+        bind:
+            - 10
+            - 0
+            - 10
+            - 10
+        mirrored: true
+mirror_matrix_inner_top:
+    x: 224.0381974
+    'y': -107.3605718
+    r: 15
+    meta:
+        stagger: -2
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_inner_top
+        name: mirror_matrix_inner_top
+        tags:
+            - switchcore
+        col_net: col6
+        row_net: row1r
+        mirror:
+            row_net: row1r
+        zone:
+            key:
+                tags:
+                    - switchcore
+            columns:
+                farpinky:
+                    key:
+                        col_net: col1
+                    rows: {}
+                    name: farpinky
+                pinky:
+                    key:
+                        col_net: col2
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: 12
+                        col_net: col3
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: 5
+                        col_net: col4
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: -6
+                        col_net: col5
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        stagger: -2
+                        col_net: col6
+                    rows: {}
+                    name: inner
+            rows:
+                bottom:
+                    row_net: row3
+                    mirror:
+                        row_net: row3r
+                home:
+                    row_net: row2
+                    mirror:
+                        row_net: row2r
+                top:
+                    row_net: row1
+                    mirror:
+                        row_net: row1r
+            name: matrix
+        col:
+            key:
+                stagger: -2
+                col_net: col6
+            rows: {}
+            name: inner
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+        mirrored: true
+mirror_thumbfan_tucky_thumb:
+    x: 269.66583430000003
+    'y': -152.0748734
+    r: 20
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -5
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_tucky_thumb
+        name: mirror_thumbfan_tucky_thumb
+        tags:
+            - thumbfan
+        col_net: col1
+        row_net: row4r
+        mirror:
+            row_net: row4r
+        zone:
+            key:
+                tags:
+                    - thumbfan
+            columns:
+                tucky:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -5
+                        col_net: col1
+                    name: tucky
+                near:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        col_net: col2
+                    name: near
+                home:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col3
+                        top:
+                            col_net: col6
+                    name: home
+                far:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col4
+                        top:
+                            col_net: col5
+                    name: far
+            rows:
+                thumb:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+                top:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+            name: thumbfan
+        col:
+            rows:
+                top: $unset
+            key:
+                splay: -5
+                col_net: col1
+            name: tucky
+        row: thumb
+        bind:
+            - 0
+            - 0
+            - 0
+            - 0
+        mirrored: true
+mirror_thumbfan_near_thumb:
+    x: 250.7570251
+    'y': -161.9181764
+    r: 35
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_near_thumb
+        name: mirror_thumbfan_near_thumb
+        tags:
+            - thumbfan
+        col_net: col2
+        row_net: row4r
+        mirror:
+            row_net: row4r
+        zone:
+            key:
+                tags:
+                    - thumbfan
+            columns:
+                tucky:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -5
+                        col_net: col1
+                    name: tucky
+                near:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        col_net: col2
+                    name: near
+                home:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col3
+                        top:
+                            col_net: col6
+                    name: home
+                far:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col4
+                        top:
+                            col_net: col5
+                    name: far
+            rows:
+                thumb:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+                top:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+            name: thumbfan
+        col:
+            rows:
+                top: $unset
+            key:
+                splay: -15
+                origin:
+                    - -9.5
+                    - -9.5
+                col_net: col2
+            name: near
+        row: thumb
+        bind:
+            - 0
+            - 10
+            - 0
+            - 0
+        mirrored: true
+mirror_thumbfan_home_thumb:
+    x: 235.0401523
+    'y': -176.3200369
+    r: 50
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_home_thumb
+        name: mirror_thumbfan_home_thumb
+        tags:
+            - thumbfan
+        row_net: row4r
+        mirror:
+            row_net: row4r
+        col_net: col3
+        zone:
+            key:
+                tags:
+                    - thumbfan
+            columns:
+                tucky:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -5
+                        col_net: col1
+                    name: tucky
+                near:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        col_net: col2
+                    name: near
+                home:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col3
+                        top:
+                            col_net: col6
+                    name: home
+                far:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col4
+                        top:
+                            col_net: col5
+                    name: far
+            rows:
+                thumb:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+                top:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+            name: thumbfan
+        col:
+            key:
+                splay: -15
+                origin:
+                    - -9.5
+                    - -9.5
+            rows:
+                thumb:
+                    col_net: col3
+                top:
+                    col_net: col6
+            name: home
+        row: thumb
+        bind:
+            - 10
+            - 10
+            - 0
+            - 0
+        mirrored: true
+mirror_thumbfan_home_top:
+    x: 220.4853079
+    'y': -164.1070722
+    r: 50
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_home_top
+        name: mirror_thumbfan_home_top
+        tags:
+            - thumbfan
+        row_net: row4r
+        mirror:
+            row_net: row4r
+        col_net: col6
+        zone:
+            key:
+                tags:
+                    - thumbfan
+            columns:
+                tucky:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -5
+                        col_net: col1
+                    name: tucky
+                near:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        col_net: col2
+                    name: near
+                home:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col3
+                        top:
+                            col_net: col6
+                    name: home
+                far:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col4
+                        top:
+                            col_net: col5
+                    name: far
+            rows:
+                thumb:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+                top:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+            name: thumbfan
+        col:
+            key:
+                splay: -15
+                origin:
+                    - -9.5
+                    - -9.5
+            rows:
+                thumb:
+                    col_net: col3
+                top:
+                    col_net: col6
+            name: home
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 0
+        mirrored: true
+mirror_thumbfan_far_thumb:
+    x: 223.5862948
+    'y': -194.2989918
+    r: 65
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_far_thumb
+        name: mirror_thumbfan_far_thumb
+        tags:
+            - thumbfan
+        row_net: row4r
+        mirror:
+            row_net: row4r
+        col_net: col4
+        zone:
+            key:
+                tags:
+                    - thumbfan
+            columns:
+                tucky:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -5
+                        col_net: col1
+                    name: tucky
+                near:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        col_net: col2
+                    name: near
+                home:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col3
+                        top:
+                            col_net: col6
+                    name: home
+                far:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col4
+                        top:
+                            col_net: col5
+                    name: far
+            rows:
+                thumb:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+                top:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+            name: thumbfan
+        col:
+            key:
+                splay: -15
+                origin:
+                    - -9.5
+                    - -9.5
+            rows:
+                thumb:
+                    col_net: col4
+                top:
+                    col_net: col5
+            name: far
+        row: thumb
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+        mirrored: true
+mirror_thumbfan_far_top:
+    x: 206.3664469
+    'y': -186.2692448
+    r: 65
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -15
+        origin:
+            - -9.5
+            - -9.5
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: mirror_far_top
+        name: mirror_thumbfan_far_top
+        tags:
+            - thumbfan
+        row_net: row4r
+        mirror:
+            row_net: row4r
+        col_net: col5
+        zone:
+            key:
+                tags:
+                    - thumbfan
+            columns:
+                tucky:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -5
+                        col_net: col1
+                    name: tucky
+                near:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        col_net: col2
+                    name: near
+                home:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col3
+                        top:
+                            col_net: col6
+                    name: home
+                far:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                    rows:
+                        thumb:
+                            col_net: col4
+                        top:
+                            col_net: col5
+                    name: far
+            rows:
+                thumb:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+                top:
+                    row_net: row4
+                    mirror:
+                        row_net: row4r
+            name: thumbfan
+        col:
+            key:
+                splay: -15
+                origin:
+                    - -9.5
+                    - -9.5
+            rows:
+                thumb:
+                    col_net: col4
+                top:
+                    col_net: col5
+            name: far
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+        mirrored: true

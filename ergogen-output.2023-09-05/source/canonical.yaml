@@ -1,0 +1,100 @@
+units:
+    mcu_height: 34
+    mcu_width: 18
+    mcu_padding: 1.5
+points:
+    zones:
+        matrix:
+            anchor:
+                rotate: 5
+            columns:
+                farpinky:
+                    key:
+                        column_net: col1
+                pinky:
+                    key:
+                        column_net: col2
+                ring:
+                    key:
+                        stagger: 12
+                        column_net: col3
+                middle:
+                    key:
+                        stagger: 5
+                        column_net: col4
+                index:
+                    key:
+                        stagger: -6
+                        column_net: col5
+                inner:
+                    key:
+                        stagger: -2
+                        column_net: col6
+            rows:
+                bottom:
+                    row_net: row3
+                home:
+                    row_net: row2
+                top:
+                    row_net: row1
+        thumbfan:
+            anchor:
+                ref: matrix_middle_bottom
+                shift:
+                    - 5.5
+                    - -25
+            columns:
+                tucky:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -5
+                        column_net: col1
+                near:
+                    rows:
+                        top: $unset
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        column_net: col2
+                home:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        column_net: col3
+                far:
+                    key:
+                        splay: -15
+                        origin:
+                            - -9.5
+                            - -9.5
+                        column_net: col4
+            rows:
+                thumb:
+                    key:
+                        row_net: row4
+                top:
+                    key:
+                        row_net: row4
+        mcu:
+            anchor:
+                ref: matrix_inner_top
+            columns:
+                mcu:
+                    key:
+                        tags:
+                            - mcu
+                        width: mcu_height
+                        height: mcu_width
+                        rotate: -90
+                        shift:
+                            - 19+mcu_padding
+                            - '-mcu_width/2-0.3'
+    rotate: -20
+    mirror:
+        ref: thumbfan_far_top
+        distance: 25
