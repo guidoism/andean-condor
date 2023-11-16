@@ -2,7 +2,7 @@
 
 48 key monoblock split keyboard
 
-![Picture of PCB](pics/pcb.png?raw=true)
+![Picture of PCB](pics/pcb-v3.png?raw=true)
 
 ## Characteristics
 
