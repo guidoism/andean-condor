@@ -93,21 +93,6 @@ outlines:
   plate:
     - what: outline
       name: outline
-  
-#  bigger_plate:
-#    - what: polygon
-#      points:
-#        - ref: matrix_farpinky_top
-#        - ref: matrix_ring_top
-#        - ref: matrix_middle_top
-#
-#        - ref: mirror_matrix_middle_top
-#        - ref: mirror_matrix_ring_top
-#        - ref: mirror_matrix_farpinky_top
-#        - ref: mirror_matrix_farpinky_top
-#
-#        - ref: mirror_thumbfan_near_thumb
-#        - ref: thumbfan_near_thumb
 
   keyholes:
     - what: rectangle
@@ -119,11 +104,29 @@ outlines:
       where: [thumbfan_far_top, mirror_thumbfan_far_top, thumbfan_home_top, mirror_thumbfan_home_top]
       bound: false
       size: [15, 15]
-  mounting_hole_flanges:
-    - what: circle
-      radius: 3
-      where: [matrix_farpinky_top, matrix_index_top, mirror_matrix_index_top, mirror_matrix_farpinky_top]
-      adjust.shift: [0, 10]
+  mounting_top_flange:
+    - what: polygon
+      fillet: 2
+      points:
+        - ref: matrix_farpinky_top
+          shift: [-9.5-2, 9.5+2]
+        - ref: mirror_matrix_farpinky_top
+          shift: [-9.5-2, 9.5+2]
+        - ref: mirror_matrix_farpinky_bottom
+          shift: [-9.5-2, -9.5]
+        - ref: mirror_thumbfan_tucky_thumb
+          shift: [9.5, -9.5-1]
+        - ref: thumbfan_far_top
+        - ref: thumbfan_tucky_thumb
+          shift: [9.5, -9.5-1]        
+        - ref: matrix_farpinky_bottom
+          shift: [-9.5-2, -9.5]
+
+  #mounting_hole_flanges:
+  #  - what: circle
+  #    radius: 3
+  #    where: [matrix_farpinky_top, matrix_index_top, mirror_matrix_index_top, mirror_matrix_farpinky_top]
+  #    adjust.shift: [0, 10]
   mounting_holes:
     - what: circle
       radius: 1.2
@@ -131,12 +134,14 @@ outlines:
       adjust.shift: [0, 10]
   switchplate:
     - name: outline
+    - operation: add
+      name: mounting_top_flange    
     - operation: subtract
       name: keyholes
     - operation: add
       name: top_thumb_keys
-    - operation: add
-      name: mounting_hole_flanges
+    #- operation: add
+    #  name: mounting_hole_flanges
     - operation: subtract
       name: mounting_holes
 
