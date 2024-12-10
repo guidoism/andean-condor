@@ -129,9 +129,25 @@ outlines:
   #    adjust.shift: [0, 10]
   mounting_holes:
     - what: circle
-      radius: 1.2
-      where: [matrix_farpinky_top, matrix_index_top, mirror_matrix_index_top, mirror_matrix_farpinky_top]
-      adjust.shift: [0, 10]
+      radius: 1.5
+      where: [matrix_farpinky_top, mirror_matrix_farpinky_top]
+      adjust.shift: [8, 12]
+    - what: circle
+      radius: 1.5
+      where: [matrix_index_top, mirror_matrix_index_top]
+      adjust.shift: [8, 12]
+    - what: circle
+      radius: 1.5
+      where: [matrix_ring_bottom, mirror_matrix_ring_bottom]
+      adjust.shift: [0, -15]
+    - what: circle
+      radius: 1.5
+      where: [thumbfan_far_top, mirror_thumbfan_far_top, thumbfan_home_top, mirror_thumbfan_home_top]
+      adjust.shift: [0, 0]      
+#    - what: circle
+#      radius: 1.5
+#      where.aggregate.parts: [matrix_farpinky_top, mirror_matrix_farpinky_top]
+#      adjust.shift: [0, 0]
   switchplate:
     - name: outline
     - operation: add
