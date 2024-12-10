@@ -58,7 +58,7 @@ outlines:
   outline:
     main:
       what: rectangle
-      where: /.*matrix.*|mirror_thumbfan.*/ # EXAMPLE: <- Using regex here
+      where: /.*matrix.*|thumbfan|mirror_thumbfan.*/ # EXAMPLE: <- Using regex here
       size: 20
       fillet: 2
     middle:
@@ -93,6 +93,21 @@ outlines:
   plate:
     - what: outline
       name: outline
+  
+#  bigger_plate:
+#    - what: polygon
+#      points:
+#        - ref: matrix_farpinky_top
+#        - ref: matrix_ring_top
+#        - ref: matrix_middle_top
+#
+#        - ref: mirror_matrix_middle_top
+#        - ref: mirror_matrix_ring_top
+#        - ref: mirror_matrix_farpinky_top
+#        - ref: mirror_matrix_farpinky_top
+#
+#        - ref: mirror_thumbfan_near_thumb
+#        - ref: thumbfan_near_thumb
 
   keyholes:
     - what: rectangle
