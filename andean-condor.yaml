@@ -93,6 +93,24 @@ outlines:
   plate:
     - what: outline
       name: outline
+
+  keyholes:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [14, 14]
+  top_thumb_keys:
+    - what: rectangle
+      where: [thumbfan_far_top, mirror_thumbfan_far_top, thumbfan_home_top, mirror_thumbfan_home_top]
+      bound: false
+      size: [15, 15]
+  switchplate:
+    - name: outline
+    - operation: subtract
+      name: keyholes
+    - operation: add
+      name: top_thumb_keys
+
 pcbs.pcb.outlines:
   - outline: plate
 pcbs.pcb.footprints:
