@@ -161,6 +161,11 @@ outlines:
     - operation: subtract
       name: mounting_holes
 
+  bottomplate:
+    - name: outline
+    - operation: add
+      name: mounting_top_flange
+
 pcbs.pcb.outlines:
   - outline: plate
 pcbs.pcb.footprints:
