@@ -119,12 +119,19 @@ outlines:
       where: [thumbfan_far_top, mirror_thumbfan_far_top, thumbfan_home_top, mirror_thumbfan_home_top]
       bound: false
       size: [15, 15]
+  mounting_hole_extras:
+    - what: circle
+      radius: 3
+      where: [matrix_farpinky_top, mirror_matrix_farpinky_top]
+      adjust.shift: [0, 10]
   switchplate:
     - name: outline
     - operation: subtract
       name: keyholes
     - operation: add
       name: top_thumb_keys
+    - operation: add
+      name: mounting_hole_extras
 
 pcbs.pcb.outlines:
   - outline: plate
