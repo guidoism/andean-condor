@@ -119,9 +119,14 @@ outlines:
       where: [thumbfan_far_top, mirror_thumbfan_far_top, thumbfan_home_top, mirror_thumbfan_home_top]
       bound: false
       size: [15, 15]
-  mounting_hole_extras:
+  mounting_hole_flanges:
     - what: circle
       radius: 3
+      where: [matrix_farpinky_top, matrix_index_top, mirror_matrix_index_top, mirror_matrix_farpinky_top]
+      adjust.shift: [0, 10]
+  mounting_holes:
+    - what: circle
+      radius: 1.2
       where: [matrix_farpinky_top, matrix_index_top, mirror_matrix_index_top, mirror_matrix_farpinky_top]
       adjust.shift: [0, 10]
   switchplate:
@@ -131,7 +136,9 @@ outlines:
     - operation: add
       name: top_thumb_keys
     - operation: add
-      name: mounting_hole_extras
+      name: mounting_hole_flanges
+    - operation: subtract
+      name: mounting_holes
 
 pcbs.pcb.outlines:
   - outline: plate
