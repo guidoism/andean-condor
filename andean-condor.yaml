@@ -122,7 +122,7 @@ outlines:
   mounting_hole_extras:
     - what: circle
       radius: 3
-      where: [matrix_farpinky_top, mirror_matrix_farpinky_top]
+      where: [matrix_farpinky_top, matrix_index_top, mirror_matrix_index_top, mirror_matrix_farpinky_top]
       adjust.shift: [0, 10]
   switchplate:
     - name: outline
