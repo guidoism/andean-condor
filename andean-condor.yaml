@@ -126,9 +126,9 @@ outlines:
   
   mcu_cutout:
     - what: rectangle
-      size: [24, 44]
+      size: [24, 50]
       where.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
-      adjust.shift: [0, -10]
+      adjust.shift: [0, -20]
 
   mounting_holes:
     - what: circle
