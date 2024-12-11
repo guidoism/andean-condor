@@ -99,11 +99,13 @@ outlines:
       where: true
       bound: false
       size: [14, 14]
+
   top_thumb_keys:
     - what: rectangle
       where: [thumbfan_far_top, mirror_thumbfan_far_top, thumbfan_home_top, mirror_thumbfan_home_top]
       bound: false
       size: [15, 15]
+
   mounting_top_flange:
     - what: polygon
       fillet: 2
@@ -121,12 +123,13 @@ outlines:
           shift: [9.5, -9.5-1]        
         - ref: matrix_farpinky_bottom
           shift: [-9.5-2, -9.5]
+  
+  mcu_cutout:
+    - what: rectangle
+      size: [24, 44]
+      where.aggregate.parts: [matrix_inner_top, mirror_matrix_inner_top]
+      adjust.shift: [0, -10]
 
-  #mounting_hole_flanges:
-  #  - what: circle
-  #    radius: 3
-  #    where: [matrix_farpinky_top, matrix_index_top, mirror_matrix_index_top, mirror_matrix_farpinky_top]
-  #    adjust.shift: [0, 10]
   mounting_holes:
     - what: circle
       radius: 1.5
@@ -144,10 +147,7 @@ outlines:
       radius: 1.5
       where: [thumbfan_far_top, mirror_thumbfan_far_top, thumbfan_home_top, mirror_thumbfan_home_top]
       adjust.shift: [0, 0]      
-#    - what: circle
-#      radius: 1.5
-#      where.aggregate.parts: [matrix_farpinky_top, mirror_matrix_farpinky_top]
-#      adjust.shift: [0, 0]
+
   switchplate:
     - name: outline
     - operation: add
@@ -156,10 +156,10 @@ outlines:
       name: keyholes
     - operation: add
       name: top_thumb_keys
-    #- operation: add
-    #  name: mounting_hole_flanges
     - operation: subtract
       name: mounting_holes
+    - operation: subtract
+      name: mcu_cutout
 
   bottomplate:
     - name: outline
