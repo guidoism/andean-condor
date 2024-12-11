@@ -166,6 +166,12 @@ outlines:
     - operation: add
       name: mounting_top_flange
 
+pcbs.switchplate:
+    outlines:
+      edge:
+        outline: switchplate
+        layer: Edge.Cuts
+    footprints:
 pcbs.pcb.outlines:
   - outline: plate
 pcbs.pcb.footprints:
