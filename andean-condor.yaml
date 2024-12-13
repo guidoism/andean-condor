@@ -148,11 +148,16 @@ outlines:
       where: [thumbfan_far_top, mirror_thumbfan_far_top, thumbfan_home_top, mirror_thumbfan_home_top]
       adjust.shift: [0, 0]      
 
-  keylocations:
+  pcbdemo:
     - name: outline
     - operation: subtract
       name: keyholes
     - operation: add
+      name: top_thumb_keys
+
+  keylocations:
+    - name: keyholes
+    - operation: subtract
       name: top_thumb_keys
 
   switchplate:
