@@ -94,6 +94,12 @@ outlines:
     - what: outline
       name: outline
 
+  mxkeyoutlines:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [19, 19]
+
   keyholes:
     - what: rectangle
       where: true
@@ -105,6 +111,39 @@ outlines:
       where: [thumbfan_far_top, mirror_thumbfan_far_top, thumbfan_home_top, mirror_thumbfan_home_top]
       bound: false
       size: [15, 15]
+
+  center_top_plate:
+    - what: polygon
+      fillet: 1
+      points: 
+        - ref: matrix_inner_top
+          shift: [9.5+1, 9.5]
+        - ref: matrix_inner_bottom
+          shift: [9.5+1, -9.5/2+3]
+        - ref: matrix_inner_bottom
+          shift: [9.5+15, -9.5/2+3]
+        #- ref: thumbfan_far_top
+        #  shift: [9.5, 9.5]
+        - ref:
+            aggregate:
+              method: average
+              parts:
+                - ref: thumbfan_far_top
+                - ref: mirror_thumbfan_far_top
+            rotate: 0
+        - ref: mirror_matrix_inner_bottom
+          shift: [9.5+15, -9.5/2+3]
+        - ref: mirror_matrix_inner_bottom
+          shift: [9.5+1, -9.5/2+3]
+        - ref: mirror_matrix_inner_top
+          shift: [9.5+1, 9.5]
+
+  keeb_with_centerplate:
+    - name: outline
+    - operation: subtract
+      name: center_top_plate
+    - operation: subtract
+      name: mxkeyoutlines      
 
   mounting_top_flange:
     - what: polygon
@@ -209,4 +248,15 @@ pcbs.pcb.footprints:
     adjust.shift: [134.145, 0] # QUESTION: Can I use math to make this centered?
     adjust.rotate: -90
 
-    
+pcbs.centerplate:
+    outlines:
+      edge:
+        outline: center_top_plate
+        layer: Edge.Cuts
+    footprints:
+      promicro:
+        what: promicro
+        params:
+          orientation: up
+        adjust.shift: [134.145, 0] # QUESTION: Can I use math to make this centered?
+        adjust.rotate: -90
